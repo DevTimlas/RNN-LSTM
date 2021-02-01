@@ -4,7 +4,7 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 
-data = pd.read_csv('/home/tim/Datasets/GOOG.csv', date_parser=True)
+data = pd.read_csv('GOOG.csv', date_parser=True)
 
 train_data = data[data['Date'] < '2020-01-01'].copy()
 test_data = data[data['Date'] >= '2020-01-01'].copy()
